@@ -1,6 +1,13 @@
-
+.wrapper
+{   
+	width: 1349px;
+	height: 2948.03px;
+	margin: 0 auto;
+	
+}
 body
 {
+
    background:#ffffff;
    animation: fadeInAnimation ease 3s;
    animation-iteration-count: 1;
@@ -19,7 +26,8 @@ img {vertical-align: middle;}
 
 
 /* The dots/bullets/indicators */
-.dot {
+.dot 
+{
   height: 15px;
   width: 15px;
   margin: 0 2px;
@@ -29,37 +37,43 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active {
+.active
+{
   background-color: #717171;
 }
 
 /* Fading animation */
-.fade {
+.fade
+{
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes fade 
+{
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-@keyframes fade {
+@keyframes fade 
+{
   from {opacity: .4} 
   to {opacity: 1}
 }
 
 /* Navbar container */
-.navbar {
+.navbar 
+{
   overflow: hidden;
   background-color: black;
   font-family: Arial;
 }
 
 /* Links inside the navbar */
-.navbar a {
+.navbar a 
+{
   float: left;
   font-size: 16px;
   color: white;
@@ -69,13 +83,15 @@ img {vertical-align: middle;}
 }
 
 /* The dropdown container */
-.dropdown {
+.dropdown 
+{
   float: left;
   overflow: hidden;
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown .dropbtn 
+{
   font-size: 16px;
   border: none;
   outline: none;
@@ -87,12 +103,14 @@ img {vertical-align: middle;}
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
   background-color: red;
 }
 
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+.dropdown-content 
+{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -102,7 +120,8 @@ img {vertical-align: middle;}
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content a 
+{
   float: none;
   color: black;
   padding: 12px 16px;
@@ -112,12 +131,14 @@ img {vertical-align: middle;}
 }
 
 /* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content a:hover 
+{
   background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content 
+{
   display: block;
 }
 
@@ -144,7 +165,7 @@ img {vertical-align: middle;}
 {  
     display:flex;
 	justify-content: center;
-	width:33%;
+	width:32.3333333333%;
 	height:300px;
 	float:left;
 	margin:2px;
@@ -170,6 +191,7 @@ img {vertical-align: middle;}
 
 }
 
+
 .leftdesc
 {   
     border-radius:8px;
@@ -181,7 +203,7 @@ img {vertical-align: middle;}
 	width:300px;
 	height:100px;
 	float:left;
-	margin-left:145px;
+	margin-left:150px;
 }
 
 .middledesc
@@ -195,8 +217,7 @@ img {vertical-align: middle;}
 	width:290px;
 	height:100px;
 	float:left;
-	margin-left:75px;
-    margin-right:35px;
+	margin-left:69.5px;
 }
 
 .rightdesc
@@ -210,8 +231,7 @@ img {vertical-align: middle;}
 	width:300px;
 	height:100px;
 	float:right;
-	margin-left:20px;
-	margin-right:110px;
+	margin-right:128px;
 	
 }
 
