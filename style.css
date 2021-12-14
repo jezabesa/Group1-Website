@@ -1,10 +1,12 @@
+/*websites size*/
 .wrapper
 {   
-	width: 1349px;
-	height: 2948.03px;
+	width: 1340px;
 	margin: 0 auto;
 	
 }
+
+/*websites body animation*/
 body
 {
 
@@ -13,19 +15,21 @@ body
    animation-iteration-count: 1;
    animation-fill-mode: forwards;
 }
+
+/*websites fade animation*/
 @keyframes fadeInAnimation 
 {
 0% {opacity: 0;}
 100% {opacity: 1;}
 }
-		
 
+/*websites sliding banner*/		
 .mySlides {display: none;}
 img {vertical-align: middle;}
 * {box-sizing: border-box;}
 
 
-/* The dots/bullets/indicators */
+/*websites bullet/dot*/
 .dot 
 {
   height: 15px;
@@ -37,33 +41,13 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
+/*websites bullet/dot active color when moving*/
 .active
 {
   background-color: #717171;
 }
 
-/* Fading animation */
-.fade
-{
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade 
-{
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade 
-{
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* Navbar container */
+/*websites navigation bar container*/
 .navbar 
 {
   overflow: hidden;
@@ -71,7 +55,7 @@ img {vertical-align: middle;}
   font-family: Arial;
 }
 
-/* Links inside the navbar */
+/*websites links inside navbar*/
 .navbar a 
 {
   float: left;
@@ -82,14 +66,14 @@ img {vertical-align: middle;}
   text-decoration: none;
 }
 
-/* The dropdown container */
+/*websites navbar dropdown container*/
 .dropdown 
 {
   float: left;
   overflow: hidden;
 }
 
-/* Dropdown button */
+/*websites navbar dropdown button*/
 .dropdown .dropbtn 
 {
   font-size: 16px;
@@ -98,17 +82,17 @@ img {vertical-align: middle;}
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0; 
 }
 
-/* Add a red background color to navbar links on hover */
+/*websites navbar color changes when hover*/
 .navbar a:hover, .dropdown:hover .dropbtn 
 {
   background-color: red;
 }
 
-/* Dropdown content (hidden by default) */
+/*websites navbar dropdown content (hiddern by default)*/
 .dropdown-content 
 {
   display: none;
@@ -119,7 +103,7 @@ img {vertical-align: middle;}
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/*websites navbar links inside dropdown*/
 .dropdown-content a 
 {
   float: none;
@@ -130,18 +114,19 @@ img {vertical-align: middle;}
   text-align: left;
 }
 
-/* Add a grey background color to dropdown links on hover */
+/*websites navbar dropdown color changer on hover*/
 .dropdown-content a:hover 
 {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu on hover */
+/*websites navbar dropdown show dropdown menu on hover*/
 .dropdown:hover .dropdown-content 
 {
   display: block;
 }
 
+/*websites pictures container*/
 .piccontainer
 {
 	justify-content: center;
@@ -151,6 +136,7 @@ img {vertical-align: middle;}
 
 }
 
+/*websites picture left container*/
 .leftpic
 {   
     display:flex;
@@ -161,6 +147,7 @@ img {vertical-align: middle;}
 	margin-left:20px;
 }
 
+/*websites picture middle container*/
 .middlepic
 {  
     display:flex;
@@ -172,6 +159,7 @@ img {vertical-align: middle;}
 
 }
 
+/*websites picture right container*/
 .rightpic
 {   
     display:flex;
@@ -183,15 +171,16 @@ img {vertical-align: middle;}
 	
 }
 
+/*websites picture description container*/
 .desccontainer
 {
 	justify-content: center;
 	width:97%;
-	height:150px;
+	height:120px;
 
 }
 
-
+/*websites picture left description container*/
 .leftdesc
 {   
     border-radius:8px;
@@ -201,11 +190,12 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:300px;
-	height:150px;
+	height:120px;
 	float:left;
 	margin-left:150px;
 }
 
+/*websites picture middle description container*/
 .middledesc
 {  
     border-radius:8px;
@@ -215,11 +205,12 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:290px;
-	height:150px;
+	height:120px;
 	float:left;
 	margin-left:69.5px;
 }
 
+/*websites picture right description container*/
 .rightdesc
 {   
     border-radius:8px;
@@ -229,12 +220,13 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:300px;
-	height:150px;
+	height:120px;
 	float:right;
 	margin-right:128px;
 	
 }
 
+/*websites pictures middle left container*/
 .leftcenterpic
 {   
     display:flex;
@@ -245,6 +237,7 @@ img {vertical-align: middle;}
 	margin-left:10px;
 }
 
+/*websites pictures middle right container*/
 .rightcenterpic
 {   
     display:flex;
@@ -255,6 +248,7 @@ img {vertical-align: middle;}
 	margin-left:10px;
 }
 
+/*websites pictures middle container*/
 .centerpic
 {   
    
@@ -266,6 +260,7 @@ img {vertical-align: middle;}
 	margin-left:25%;
 }
 
+/*websites pictures middleleft description container*/
 .leftcenterdesc
 {   
     border-radius:8px;
@@ -275,11 +270,12 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:300px;
-	height:150px;
+	height:120px;
 	float:left;
 	margin-left:25.5%;
 }
 
+/*websites pictures middle center description container*/
 .middlecenterdesc
 {   
     border-radius:8px;
@@ -289,11 +285,12 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:290px;
-	height:150px;
+	height:120px;
 	float:left;
 	margin-left:39.5%;
 }
 
+/*websites pictures middle right description container*/
 .rightcenterdesc
 {   
     border-radius:8px;
@@ -303,12 +300,13 @@ img {vertical-align: middle;}
     display:flex;
 	justify-content: center;
 	width:300px;
-	height:150px;
+	height:120px;
 	float:right;
 	margin-right:23%;
 	
 }
 
+/*websites arrow picture container*/
 .arrowcontainer
 {
 	justify-content: center;
@@ -318,6 +316,7 @@ img {vertical-align: middle;}
 
 }
 
+/*websites feedback container*/
 .feedbackcontainer
 {
 	justify-content: center;
@@ -326,6 +325,7 @@ img {vertical-align: middle;}
 	margin:10px;
 }
 
+/*websites pictures shadow*/
 img.image1
 {
 	border-radius:8px;
@@ -333,14 +333,7 @@ img.image1
 	border: 10px solid #ffffff;
 }
 	
-
-/* Grey background*/
-.bg 
-{
-    background: #ebebeb;
-    
-}
-
+/*websites sliding picture wrapper*/	
 .wrap
 {
     width: 300px;
@@ -348,6 +341,7 @@ img.image1
     animation: slide 16s infinite;
 }
 
+/*websites sliding picture container*/
 .container
 {
 	justify-content: center;
@@ -359,7 +353,7 @@ img.image1
 	
 }
 
-
+/*websites sliding picture keyframes*/
 @keyframes slide{
     0%{ transform: translateX(0);}
     25%{ transform: translateX(0);}
@@ -371,6 +365,7 @@ img.image1
     100%{transform: translateX(-300%);}
 }
 
+/*websites feedback sliding container*/
 .cont
 {
 	width: 300px;
@@ -378,6 +373,7 @@ img.image1
     margin: 20px auto;
 }
 
+/*websites shop sliding container*/
 .contshop
 {
 	width: 300px;
@@ -385,7 +381,7 @@ img.image1
     margin: 20px auto;
 }
 
-/* Sendmessage container */
+/*websites sendmessage container */
 .sendmessage
 {   
     background-image: linear-gradient(#ffa69e, #5d4954);
@@ -453,7 +449,7 @@ input[type=button]{
 	color: #000;
 }
 
-/* Footer*/
+/*websites footer container*/
 .footer-container
 {
 		width:100%;
@@ -463,6 +459,7 @@ input[type=button]{
 		font-size:14px;
 }
 
+/*websites about us footer container*/
 .aboutus-footer
 {
 		width:30%;
@@ -476,6 +473,7 @@ input[type=button]{
 		float:left;
 }
 
+/*websites contact us footer container*/
 .contactus-footer
 {
 		width:30%;
@@ -489,6 +487,7 @@ input[type=button]{
 		float:right;
 }
 
+/*websites pages footer container*/
 .pages-footer
 {
 	    width:15%;
@@ -503,6 +502,7 @@ input[type=button]{
 		
 }
 
+/*websites logo footer container*/
 .alilogo
 {
 		width:18%;
@@ -510,6 +510,8 @@ input[type=button]{
 		margin: 20px;
 		float:left;
 }
+
+/*websites logo size*/
 .ali-logo
 {
 		width:100%;
