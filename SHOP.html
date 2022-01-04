@@ -6,26 +6,30 @@
 
 <body>
 <div class = "wrapper">
- <!--navigation-->
-  <table  width = "100%" height="50px" style="background-color:black">
-	<th> <a href = "HOME.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">HOME</font></a> </th>
-	<th> <a href = "SHOP.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">SHOP</font></a> </th>
-	<th> <a href = "PRODUCT.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">PRODUCT</font></a> </th>
-	<th> <a href = "FEEDBACK.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">FEEDBACK</font></a> </th>
+<!--navigation-->
+  <table style="background-color:black" >
+	<th style="width:150px" class="Highlight"> <a href = "HOME.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">HOME</font></a> </th>
+	<th style="width:150px" class="current"> <a href = "SHOP.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">SHOP</font></a> </th>	
+	<th style="width:150px" class="Highlight" > <a href = "PRODUCT.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">PRODUCT</font></a> </th>
+	<th style="width:150px" class="Highlight"> <a href = "FEEDBACK.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">FEEDBACK</font></a> </th>
+    <th style="width:150px" class="Highlight"> <a href = "CONTACTUS.html" style="text-decoration: none;"><font size = "3" color ="white" face= "arial">CONTACT US</font></a> </th>
+	<th style="width:440px"></th>
+	<th> <img style="float:right;" width= "150px" height="120px" src="l.jpg" ></th>
   </table>
+<br>
 <br>
 
 <!--banner-->
 <div class="mySlides fade"> 
-  <img src="BANNER 3.jpg" width = "100%" height = "100%">
+  <img src="BANNER 3.jpg" width = "100%" height = "400px">
 </div>
 
 <div class="mySlides fade">
-  <img src="BANNER 1.png" width = "100%" height = "100%">
+  <img src="BANNER 1.png" width = "100%" height = "400px">
 </div>
 
 <div class="mySlides fade">
-  <img src="BANNER 2.jpg" width = "100%" height = "100%">
+  <img src="BANNER 2.jpg" width = "100%" height = "400px">
 </div>
 <br>
 
@@ -37,6 +41,7 @@
 </div>
 <br>
 
+<hr style="height:10px;border-width:0;background-color:black;border-radius:5px">
 <!--aboutimages-->
     <div class = "piccontainer">
 	    <div class="leftpic"> 
@@ -64,26 +69,21 @@
 
 <!--footer-->
 <div class="footer-container"> 
-	<div class="alilogo">
-		<img class="ali-logo" src="l.jpg">
-	</div>
-	<br>
 	<div class ="aboutus-footer">
-	 <font size = "3" color = "white" face= "arial">MISSION</font>
+	 MISSION
 	 <br>
 	 <br>
      <li><font size = "3" color = "pink" face= "arial">Our company Mission was to innovate, to lead, to enhance and provide best-value products and services in our customers. 
 	 It is also our Mission to be ahead of fashion trends and to give our customers a clothes that could make them stand out.</font></li>
-	 <br>
-	 <br>
-     <font size = "3" color = "white" face= "arial">VISION</font>
-	 <br>
-	 <br>
-     <li><font size = "3" color = "pink" face= "arial">We strive to be the leading distributor of Clothing Apparel that offer affordable and fashionable cloths in the Philippines</font></li>
-	 <br>
 	</div>
-	<div class="contactus-footer">
-		CONTACT US
+	<div class ="aboutus-footer">
+     VISION
+	 <br>
+	 <br>
+     <li><font size = "3" color = "pink" face= "arial">We strive to be the leading distributor of Clothing Apparel that offer affordable and fashionable cloths in the Philippines.</font></li>
+	</div>
+	<div class="socmed-footer">
+		SOCIAL MEDIA
 		<br>
 		<br>
 		<img src="f.png" width = "50px" height="50px" align="left" ></img>
@@ -109,6 +109,8 @@
 		<li><a href = "PRODUCT.html" style="text-decoration: none;"><font size = "3" color ="pink" face= "arial">PRODUCT</font></a></li>
 		<br>
 		<li><a href = "FEEDBACK.html" style="text-decoration: none;"><font size = "3" color ="pink" face= "arial">FEEDBACK</font></a></li>
+		<br>
+		<li><a href = "CONTACTUS.html" style="text-decoration: none;"><font size = "3" color ="pink" face= "arial">CONTACT US</font></a></li>
 	</div>
 </div> 
 </div>
@@ -132,6 +134,26 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
+</script>
+
+<script src="JavaScript/jquery-1.10.2.js" type="text/javascript"></script> 
+
+<script type="text/javascript">
+    $(function() {
+        // this will get the full URL at the address bar
+        var url = window.location.href;
+
+        // passes on every "a" tag
+        $(".topmenu a").each(function() {
+            // checks if its the same on the address bar
+            if (url == (this.href)) {
+                $(this).closest("th").addClass("active");
+                //for making parent of submenu active
+               $(this).closest("th").parent().parent().addClass("active");
+            }
+        });
+    });        
 </script>
 
 </body>
